@@ -240,3 +240,16 @@
 - ซ่อนคำอธิบายเพิ่มเติมของหน้า Longitudinal Wave ไว้ใน details/summary
 - เอากลุ่ม mini info cards ออก
 - ย้าย Simulation Player เข้าไปในเฟรมเดียวกับแอนิเมชัน
+
+
+## v5.30 Longitudinal Minimal
+- เอาคำว่า Simulation Player ออก
+- เอา Loop animation ออก
+- เอาการ์ด readout (Frequency, Amplitude, Wave Speed, Wavelength) ออกจากหน้า Longitudinal Wave
+
+
+## v5.31 Longitudinal Balanced
+- จัดโครงสร้างหน้า Longitudinal Wave ใหม่ให้สะอาดขึ้น
+- ปรับสัดส่วนหน้า โดยเฉพาะแนวนอนให้กราฟเด่นกว่า Parameters
+- ลดความกว้างและ padding ของแผง Parameters
+- คง player แบบไอคอนล้วนและคำอธิบายเพิ่มเติมแบบยุบได้

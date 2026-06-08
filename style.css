@@ -1217,3 +1217,69 @@ main.wrap{
   .longitudinalFocusPage .embeddedPlayerBar{padding:10px 12px}
   .longitudinalFocusPage .embeddedPlayerBar .playerNow{font-size:.82rem}
 }
+
+
+/* v5.30 longitudinal minimal player */
+.longitudinalFocusPage .embeddedPlayerBar{display:flex;justify-content:center;align-items:center;min-height:78px}
+.longitudinalFocusPage .embeddedPlayerBar .playerCluster.playerLeft,
+.longitudinalFocusPage .embeddedPlayerBar .vizPlayerMeta{display:none !important}
+.longitudinalFocusPage .embeddedPlayerBar .playerCenterOnly{width:100%;justify-content:center}
+.longitudinalFocusPage .embeddedPlayerBar .playerBtn{width:52px;height:52px}
+.longitudinalFocusPage .embeddedPlayerBar .playerPrimary{transform:scale(1.06)}
+.longitudinalFocusPage .templateMainViz .templateReadout{display:none !important}
+
+
+/* v5.31 longitudinal balanced proportions */
+.longitudinalFocusPage .longitudinalFocusGrid{
+  grid-template-columns:minmax(0,2.15fr) minmax(260px,.72fr);
+  gap:14px;
+  align-items:start;
+}
+.longitudinalFocusPage .longitudinalMainViz{padding-bottom:12px;min-width:0}
+.longitudinalFocusPage .longitudinalControlViz{
+  justify-self:end;
+  width:100%;
+  max-width:320px;
+  padding:16px 16px 14px;
+}
+.longitudinalFocusPage .vizMediaFrame{border-radius:22px;overflow:hidden;background:linear-gradient(180deg, rgba(6,11,24,.94), rgba(10,16,30,.96));border:1px solid rgba(148,163,184,.16);box-shadow:inset 0 0 0 1px rgba(255,255,255,.03)}
+.longitudinalFocusPage .vizMediaFrame .vizSingleModeLabel{margin:0;border-radius:0;padding:13px 16px;background:rgba(17,24,39,.75);border-bottom:1px solid rgba(148,163,184,.12)}
+.longitudinalFocusPage .vizMediaFrame canvas{display:block;width:100%;height:auto;aspect-ratio:1200/520;background:#040914}
+.longitudinalFocusPage .embeddedPlayerBar{display:flex;justify-content:center;align-items:center;min-height:72px;margin:0;border-radius:0;padding:10px 12px;background:rgba(8,13,24,.96);border-top:1px solid rgba(148,163,184,.12)}
+.longitudinalFocusPage .embeddedPlayerBar .playerCluster.playerLeft,
+.longitudinalFocusPage .embeddedPlayerBar .vizPlayerMeta{display:none !important}
+.longitudinalFocusPage .embeddedPlayerBar .playerCenterOnly{width:100%;justify-content:center;gap:16px}
+.longitudinalFocusPage .embeddedPlayerBar .playerBtn{width:50px;height:50px}
+.longitudinalFocusPage .embeddedPlayerBar .playerPrimary{transform:scale(1.05)}
+.longitudinalFocusPage .explainDetails{margin:12px 0 0;border:1px solid rgba(148,163,184,.16);border-radius:18px;background:rgba(8,15,29,.62);overflow:hidden}
+.longitudinalFocusPage .explainDetails summary{cursor:pointer;list-style:none;padding:13px 16px;font-weight:700;color:#eef6ff;display:flex;align-items:center;justify-content:space-between;gap:10px}
+.longitudinalFocusPage .explainDetails summary::-webkit-details-marker{display:none}
+.longitudinalFocusPage .explainDetails summary::after{content:'▾';font-size:.95rem;color:#cbd5e1;transition:transform .18s ease}
+.longitudinalFocusPage .explainDetails[open] summary::after{transform:rotate(180deg)}
+.longitudinalFocusPage .detailsBody{padding:0 14px 14px}
+.longitudinalFocusPage .compactExplainStrip{margin-top:2px;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.longitudinalFocusPage .compactExplainStrip .conceptChip{padding:12px 14px}
+.longitudinalFocusPage .explainGrid{padding:12px 0 0;grid-template-columns:1.15fr .85fr}
+.longitudinalFocusPage .longitudinalControlViz .panelTitleRow{margin-bottom:8px}
+.longitudinalFocusPage .longitudinalControlViz .panelHint{max-width:170px;font-size:.74rem}
+.longitudinalFocusPage .longitudinalControlViz .richField{padding:0 0 4px}
+.longitudinalFocusPage .longitudinalControlViz .field label{font-size:.94rem}
+.longitudinalFocusPage .longitudinalControlViz input[type="range"]{margin-top:4px}
+.longitudinalFocusPage .longitudinalControlViz .valueBadge{padding:3px 9px;font-size:.75rem}
+.longitudinalFocusPage .templateMainViz .templateReadout,
+.longitudinalFocusPage .templateControlViz .miniInfoGrid{display:none !important}
+@media (max-width: 1100px){
+  .longitudinalFocusPage .longitudinalFocusGrid{grid-template-columns:minmax(0,1.65fr) minmax(250px,.85fr)}
+  .longitudinalFocusPage .longitudinalControlViz{max-width:none}
+}
+@media (max-width: 980px){
+  .longitudinalFocusPage .longitudinalFocusGrid{grid-template-columns:1fr}
+  .longitudinalFocusPage .longitudinalControlViz{justify-self:stretch;max-width:none;padding:18px}
+  .longitudinalFocusPage .compactExplainStrip{grid-template-columns:1fr 1fr}
+  .longitudinalFocusPage .explainGrid{grid-template-columns:1fr}
+}
+@media (max-width: 640px){
+  .longitudinalFocusPage .compactExplainStrip{grid-template-columns:1fr}
+  .longitudinalFocusPage .embeddedPlayerBar{padding:10px 12px}
+  .longitudinalFocusPage .embeddedPlayerBar .playerBtn{width:46px;height:46px}
+}
